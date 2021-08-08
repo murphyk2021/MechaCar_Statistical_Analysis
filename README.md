@@ -1,2 +1,2 @@
-# MechaCar_Statistical_Analysis
-Module 15
+# AutosRUs: Production Data and Manufacturing
+## Module 15:  Statistics and R
