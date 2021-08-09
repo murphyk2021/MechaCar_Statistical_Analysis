@@ -64,5 +64,15 @@ Suspension<-read.csv('Suspension_Coil.csv', check.names=F,stringsAsFactors=F)
 #Create a summary table of the Suspension Coils PSI data
 total_summary<-Suspension%>%summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 
+#Create a summary table which groups the data by manufacturing lot
 lot_summary<-Suspension %>% group_by(Manufacturing_Lot)%>%
   summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+#compare PSI across all manufacturing lots to the population mean of 1,500 PSI
+t.test(lot_summary$Mean, mu=1500)
+
+t.test(subset(Suspension,Manufacturing_Lot=="Lot1")$PSI, mu=1500)
+
+t.test(subset(Suspension,Manufacturing_Lot=="Lot2")$PSI, mu=1500)
+
+t.test(subset(Suspension,Manufacturing_Lot=="Lot3")$PSI, mu=1500)    
