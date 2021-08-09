@@ -1,7 +1,7 @@
 # AutosRUs: Analysis of Production Data
 ## Module 15:  Statistics and R
 ---
-### Overview of Project 
+## Overview of Project 
 
 In this module we practiced using RStudio to perform statistical analyses.  Upon completion of our practice, we were given a dataset which contains the mpg test results for 50 prototype MechaCars to determine what is blocking the progress of the manufacturing team.
 
@@ -28,3 +28,17 @@ After reviewing the data for the production os suspension coils it appears we ma
 Further analysis of the suspension coil data supports the above conclusion that the manufcaturing process at Lot 3 needs to be reviewed.  This is evident by the t-test results that show that there is a statistically significant difference between the coils produced at Lot 3 compared to the population mean of 1500PSI.  
 
 ![t-test results](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/1b3c675c6a173485df11787686b043b5e83a2e0d/images/ttest_Sus_Coils.JPG)
+---
+
+## Study Design: MechaCar vs Competition
+The manufacturing team has been working hard to produce the best possible product.  However, if AutosRUs is gogn to turn a profit they will need to stand out against the competition.  So, we will need to analyze how AutosRUs vehicles compare to others on the market.  The customer is going to want to get the most from their money so it may behoove AutosRUS to show:
+- average inventory price is lower than the competition
+  - A two-sample t-test which compares the calculated average cost of vehicles could be used to determine if there is a significant difference
+    - Null hypothesis: There is no statistical significance (p>0.05) between the average price at AutosRUs and other companies
+    - Alternate hypothesis: Average prices at AutosRUs are lower than other companies
+  - A summary boxplot could also be used to visualize this data from multiple companies
+
+-Customer satisfaction after purchasing a vehicle through AutosRUs compared to the competition
+  - Statistical data of customer satisfaction could be obtained through the use of surveys or posted online reviews
+  - Summary statistics and a t-test could be used to compare data from different companies (data could be grouped by individual competitors and/or as one competitor
+
