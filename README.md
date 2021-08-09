@@ -38,7 +38,7 @@ The manufacturing team has been working hard to produce the best possible produc
     - Alternate hypothesis: Average prices at AutosRUs are lower than other companies
   - A summary boxplot could also be used to visualize this data from multiple companies
 
--Customer satisfaction after purchasing a vehicle through AutosRUs compared to the competition
+- Customer satisfaction after purchasing a vehicle through AutosRUs compared to the competition
   - Statistical data of customer satisfaction could be obtained through the use of surveys or posted online reviews
   - Summary statistics and a t-test could be used to compare data from different companies (data could be grouped by individual competitors and/or as one competitor
 
