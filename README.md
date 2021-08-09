@@ -15,6 +15,6 @@ These conclusions are further supported by running a correlation matrix which re
 
 ![iage of correlation matrix output](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/5bf733d59cb04038e1011c0118e7026e7acc7304/images/correlation_matrix.png)
 
-Additionally, if we create individual plots of the individual variables we can clearly see that vehicle length does, in fact, appear to be correlated with MPG while AWD does not.  From the individual analyses we also discover that ground clearance does not appear to have enough data points to generate a confident regression.
+Additionally, if we create individual plots of the individual variables we can clearly see that vehicle length does, in fact, appear to be correlated with MPG while AWD does not. 
 
 ![image of scatter plots with lnear regression](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/5bf733d59cb04038e1011c0118e7026e7acc7304/images/Independent_LinearRegression.JPG)
