@@ -31,7 +31,7 @@ summary(lm(mpg~vehicle_length + ground_clearance, data=MechaCar))
 
 
 
-#Visualize the linear regression
+#Visualize the linear regression for MPG vs Vehicle_length
 #create linear model
 model <- lm(mpg ~ vehicle_length,MechaCar)
 
@@ -45,7 +45,7 @@ plt + geom_point() + geom_line(aes(y=yvals), color = "red")
 
 
 
-#Visualize the linear regression
+#Visualize the linear regression for MPG vs AWD
 #create linear model
 model <- lm(mpg ~ AWD,MechaCar)
 
@@ -58,3 +58,11 @@ plt <- ggplot(MechaCar,aes(x=AWD,y=mpg))
 plt + geom_point() + geom_line(aes(y=yvals), color = "red")
 
 
+#Load Data
+Suspension<-read.csv('Suspension_Coil.csv', check.names=F,stringsAsFactors=F)
+
+#Create a summary table of the Suspension Coils PSI data
+total_summary<-Suspension%>%summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+lot_summary<-Suspension %>% group_by(Manufacturing_Lot)%>%
+  summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
