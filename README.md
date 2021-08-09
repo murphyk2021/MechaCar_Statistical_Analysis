@@ -18,3 +18,13 @@ These conclusions are further supported by running a correlation matrix which re
 Additionally, if we create individual plots of the individual variables we can clearly see that vehicle length does, in fact, appear to be correlated with MPG while AWD does not. 
 
 ![image of scatter plots with lnear regression](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/5bf733d59cb04038e1011c0118e7026e7acc7304/images/Independent_LinearRegression.JPG)
+---
+## Summary Statistics on Suspension Coils
+After reviewing the data for the production os suspension coils it appears we may need to further investigate production at Lot 3 as the variance on the suspension coils produced at this location exceeds the lmit of 100 pounds per square inch.
+
+![image of summary data](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/874544044324f762c83f5e33bf3f9f590e8061fd/images/PSI_limits_Sus_Coils.JPG)
+---
+## T-Tests on Suspension Coils
+Further analysis of the suspension coil data supports the above conclusion that the manufcaturing process at Lot 3 needs to be reviewed.  This is evident by the t-test results that show that there is a statistically significant difference between the coils produced at Lot 3 compared to the population mean of 1500PSI.  
+
+![t-test results](https://github.com/murphyk2021/MechaCar_Statistical_Analysis/blob/1b3c675c6a173485df11787686b043b5e83a2e0d/images/ttest_Sus_Coils.JPG)
